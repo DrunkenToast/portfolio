@@ -5,7 +5,8 @@ import { Tags } from '../static/tags'
 
 <template>
     <!-- First div is to create a gradient background layer, second makes it look like a border -->
-    <a href="https://github.com/DrunkenToast/.dotfiles" class='col-start-1 rounded-2xl w-full
+    <a href="https://github.com/DrunkenToast/.dotfiles" target="_blank"
+        class='col-start-1 rounded-2xl w-full
         border-2 border-fg hover:border-accent-orange
         transition-all
         h-full flex flex-col bg-bg font-title p-5'>

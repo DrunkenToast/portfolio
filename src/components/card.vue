@@ -13,13 +13,13 @@ const props = defineProps({
 
 <template>
     <!-- First div is to create a gradient background layer, second makes it look like a border -->
-    <a :href="props.data.link" class='p-1 rounded-[40px] w-full overflow-hidden
-        bg-gradient-to-br from-accent-green to-accent-blue
+    <a :href="props.data.link" target="_blank" class='p-1 rounded-[40px] w-full
+        bg-gradient-to-br from-accent-green to-accent-blue overflow-hidden
         hover:from-accent-blue hover:to-accent-green'>
         <div class='h-full flex flex-col bg-bg rounded-[36px] font-title p-5'>
             <div class='text-xl font-semibold mb-1 flex flex-row justify-between'>
                 {{ props.data.title }}
-                <vue-feather v-if="props.data.pinned" class="text-accent-orange" type="star"></vue-feather>
+                <vue-feather v-if="props.data.pinned" type="chevron-up"></vue-feather>
             </div>
             <div>
                 {{ props.data.description }}
