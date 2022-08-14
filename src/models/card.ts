@@ -5,4 +5,5 @@ export default interface CardData {
     description: string,
     tags: TagData[],
     link: string,
+    pinned: boolean,
 }

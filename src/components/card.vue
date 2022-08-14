@@ -17,8 +17,9 @@ const props = defineProps({
         bg-gradient-to-br from-accent-green to-accent-blue
         hover:from-accent-blue hover:to-accent-green'>
         <div class='h-full flex flex-col bg-bg rounded-[36px] font-title p-5'>
-            <div class='text-xl font-semibold mb-1'>
+            <div class='text-xl font-semibold mb-1 flex flex-row justify-between'>
                 {{ props.data.title }}
+                <vue-feather v-if="props.data.pinned" class="text-accent-orange" type="star"></vue-feather>
             </div>
             <div>
                 {{ props.data.description }}

@@ -34,12 +34,9 @@ import { Cards } from './static/cards'
             </a>
         </div>
         <DotfilesCard></DotfilesCard>
-        <Card v-for="card in Cards" :data="{
-            title: card.title,
-            description: card.description,
-            tags: card.tags,
-            link: card.link,
-        }" />
+        <Card v-for="card in Cards.sort((a, b) => {
+            return a.pinned === b.pinned ? 0 : a.pinned ? -1 : 1
+        })" :data="card" />
     </div>
 </template>
 
