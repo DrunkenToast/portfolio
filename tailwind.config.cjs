@@ -2,6 +2,7 @@
 const colors = {
     'fg': '#EBDBB2',
     'bg': '#282828',
+    'bg_a': '#32302f',
     'accent-green': '#98971A',
     'accent-blue': '#458588',
     'accent-orange': '#d65d0e',

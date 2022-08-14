@@ -8,8 +8,8 @@ import { Tags } from '../static/tags'
     <a href="https://github.com/DrunkenToast/.dotfiles" target="_blank"
         class='col-start-1 rounded-2xl w-full
         border-2 border-fg hover:border-accent-orange
-        transition-all
-        h-full flex flex-col bg-bg font-title p-5'>
+        bg-bg hover:bg-bg_a transition-all
+        h-full flex flex-col font-title p-5'>
         <div class='text-xl font-code font-semibold mb-1'>
             <span class="animate-cursor">.</span>dotfiles
         </div>
