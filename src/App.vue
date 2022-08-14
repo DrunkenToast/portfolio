@@ -1,11 +1,46 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import Home from './views/home.vue'
+import Card from './components/card.vue'
+import DotfilesCard from './components/dotfiles-card.vue'
+import { Header1, Header2, Header3, Paragraph, Link } from './components/text'
+import { Cards } from './static/cards'
 </script>
 
 <template>
-    <Home/> 
+    <Header1>
+        Hi! Here's my <span class="text-accent-green">portfolio</span>.
+    </Header1>
+    <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-flow-row-dense
+        p-10 w-full justify-between gap-10">
+        <div class="row-span-2 w-full border-2 border-fg rounded-2xl p-5 h-full">
+            <Header2>
+                I'm <span class="text-accent-green">Peter</span>.
+            </Header2>
+            <Paragraph>
+                I love developing software, always learning something new.
+            </Paragraph>
+            <Link href="https://github.com/DrunkenToast">
+            <vue-feather type="github" class="mr-1"></vue-feather>
+            My Github profile
+            </Link>
+            <Header3>Contact</Header3>
+            <Paragraph>
+                Alright, alright, I know you're convinced, you can contact me right here.
+            </Paragraph>
+            <a href="mailto:peter5leconte@gmail.com"
+                class="block w-fit mx-auto px-5 py-2 font-code font-semibold
+                border-2 border-accent-orange text-accent-orange rounded-lg
+                hover:bg-accent-orange hover:text-fg transition-all">
+                Hire me
+            </a>
+        </div>
+        <DotfilesCard></DotfilesCard>
+        <Card v-for="card in Cards" :data="{
+            title: card.title,
+            description: card.description,
+            tags: card.tags,
+            link: card.link,
+        }" />
+    </div>
 </template>
 
 <style scoped>

@@ -13,7 +13,7 @@ const props = defineProps({
 
 <template>
     <!-- First div is to create a gradient background layer, second makes it look like a border -->
-    <a href="https://github.com/DrunkenToast" class='p-1 rounded-[40px] w-full
+    <a :href="props.data.link" class='p-1 rounded-[40px] w-full overflow-hidden
         bg-gradient-to-br from-accent-green to-accent-blue
         hover:from-accent-blue hover:to-accent-green'>
         <div class='h-full flex flex-col bg-bg rounded-[36px] font-title p-5'>
@@ -29,6 +29,3 @@ const props = defineProps({
         </div>
     </a>
 </template>
-
-<style scoped>
-</style>

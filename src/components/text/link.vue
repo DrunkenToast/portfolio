@@ -8,10 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <a :href="props.href" class="text-accent-blue flex flex-row items-center my-5">
+    <a :href="props.href" class="text-accent-blue hover:underline w-fit flex flex-row items-center">
         <slot></slot>
     </a>
 </template>
-
-<style scoped>
-</style>

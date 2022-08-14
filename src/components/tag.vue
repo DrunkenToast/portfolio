@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { PropType } from 'vue';
-import { TagData } from '../models/tag';
+import TagData from '../models/tag';
 
 const props = defineProps({
     data: {

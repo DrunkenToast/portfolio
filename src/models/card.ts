@@ -4,4 +4,5 @@ export default interface CardData {
     title: string,
     description: string,
     tags: TagData[],
+    link: string,
 }

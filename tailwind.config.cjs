@@ -4,6 +4,7 @@ const colors = {
     'bg': '#282828',
     'accent-green': '#98971A',
     'accent-blue': '#458588',
+    'accent-orange': '#d65d0e',
 }
 module.exports = {
     content: [
@@ -21,12 +22,12 @@ module.exports = {
                 blink: {
                     '0%, 49%': {
                         backgroundColor: colors.fg,
-                        color: colors.bg
+                        color: colors.bg,
                     },
                 }
             },
             animation: {
-                cursor: 'blink 1s steps(1, start) infinite'
+                cursor: 'blink 1s steps(1, start) infinite',
             }
         },
     },
