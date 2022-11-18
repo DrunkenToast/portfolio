@@ -11,7 +11,7 @@ import { Tags } from '../static/tags'
         bg-bg hover:bg-bg_a transition-all
         h-full flex flex-col font-title p-5'>
         <div class='text-xl font-code font-semibold mb-1'>
-            <span class="animate-cursor">.</span>dotfiles
+            .dotfiles<span class="animate-cursor">&nbsp;</span>
         </div>
         <div>
             My Neovim, tmux and shell setups are all public.
