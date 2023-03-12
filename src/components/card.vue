@@ -19,16 +19,17 @@ const props = defineProps({
         hover:from-accent-blue hover:to-accent-green'>
         <div class='h-full flex flex-col bg-bg rounded-[36px] font-title p-5
             hover:bg-bg_a transition-all'>
-            <div class='text-xl font-semibold mb-1 flex flex-row justify-between'>
-                {{ props.data.title }}
-                <PushPin class="text-fg p-1 h-full w-fit aspect-square" v-if="props.data.pinned"></PushPin>
+            <div class='flex flex-row justify-between'>
+                <div class='text-xl font-semibold mb-1'>{{ props.data.title }}</div>
+                <PushPin class="text-fg h-5 w-5" v-if="props.data.pinned"></PushPin>
             </div>
             <div>
                 {{ props.data.description }}
             </div>
-            <div class="mt-auto flex flex-row justify-end">
-                <Tag v-for="tag in props.data.tags" :data="tag" />
+            <div class="mt-auto flex flex-row justify-end flex-wrap">
+                <Tag v-for="(tag, index) in props.data.tags" :data="tag" :key="index" />
             </div>
         </div>
     </a>
 </template>
+
