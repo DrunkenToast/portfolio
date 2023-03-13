@@ -6,7 +6,7 @@ export const Cards: CardData[] = [
         title: 'Archived thoughts',
         description: 'Astro blog theme for posts with tags with dark and light theme.',
         tags: [Tags.astro],
-        link: 'https://github.com/DrunkenToast/portfolio',
+        link: 'https://github.com/DrunkenToast/archived-thoughts',
         pinned: false,
     },
     {
@@ -59,7 +59,7 @@ export const Cards: CardData[] = [
     {
         title: 'Webshop',
         description: 'Webshop with PHP, MySQL database and bootstrap.\
-        School project for web engineering.',
+        School project for PHP & MySQL development.',
         tags: [Tags.php, Tags.sql],
         link: 'https://github.com/DrunkenToast/webshop-php-mysql',
         pinned: false,
